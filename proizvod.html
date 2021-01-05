@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Minimal Chic</title>
+    <link href="proizvod_style.css" rel="stylesheet">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("navigacija");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <a href="index.html"><img src="Logo.jpg"></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="icofont-navigation-menu"></i>
+        </a>
+        <nav id="navigacija">
+            <ul>
+              <li><a href="">Novosti</a></li>
+              <li class="dropdown"><a href="">Trgovina</a>
+                  <div class="dropdown-content">
+                      <a href="">Lice</a>
+                      <a href="">Tijelo</a>
+                      <a href="">Šminka</a>
+                  </div>
+              </li>
+              <li><a href="">O Nama</a></li>
+              <li><a href="">Moj račun</a></li>
+            </ul>
+        </nav>
+        <a href="" class="kolica"><i class="icofont-cart-alt"></i></a>
+      </div>
+  </header>
+    <main>
+        <div class="proizvod-left">
+            <img src="photos/black1.jpg">
+        </div>
+        <div class="proizvod-right">
+            <h3>Krema za lice</h3>
+            <h4>55.00 kn</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facere iusto quia vero sit temporibus cum, eveniet optio voluptas, quasi sunt quod accusamus placeat reiciendis ipsum quo officiis reprehenderit, velit fugit repudiandae. Inventore quia natus fugiat, velit voluptatum eaque iusto, suscipit eum ab quaerat exercitationem illum non reiciendis, facere rem.</p>
+        </div>
+        <div class="naruci">
+            <h3>Naruči odmah!</h3>
+            <form>
+                <label>Ime:</label>
+                <input type="text">
+                <label>Prezime:</label>
+                <input type="text">
+                <label>Adresa:</label>
+                <input type="text">
+                <label>Email:</label>
+                <input type="email">
+                <input type="submit" value="Naruči!">
+            </form>
+        </div>
+    </main>
+    <footer>
+      <div class="item">
+        <img src="logo2.jpg">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sit cum ab temporibus sapiente! Tenetur et odit, tempore eaque alias dolores quia sequi doloribus ipsum molestiae soluta sit vitae consequuntur.</p>
+      </div>
+      <div class="item">
+        <h4>Korisni linkovi</h4>
+        <a href="#">Lice</a>
+        <a href="#">Tijelo</a>
+        <a href="#">Šminka</a>
+        <a href="#">Kontakt</a>
+        <a href="#">Moj račun</a>
+        <a href="#">Novosti</a>
+      </div>
+      <div class="item">
+        <h4>Prati nas na:</h4>
+        <a href="#"><i class="icofont-facebook"></i></a>
+        <a href="#"><i class="icofont-instagram"></i></a>
+      </div>
+    </footer>
+  </body>
