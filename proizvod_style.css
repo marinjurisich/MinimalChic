@@ -67,17 +67,25 @@ footer a:hover {
     transition: none;
 }
 
-main .item h4:hover{
+main h4:hover{
     text-decoration: underline #BF0079;
     transition: ease-in-out 1s;
 }
 
-main .item h5:hover{
+main h5:hover{
     text-decoration: underline #BF0079;
     transition: ease-in-out 1s;
 }
 
 @media(min-width:1115px){
+
+    #kolica-big{
+        display: block;
+    }
+
+    #kolica-small{
+        display: none;
+    }
 
     nav ul{
         list-style: none;
@@ -109,11 +117,11 @@ main .item h5:hover{
 
     .wrapper{
         width: 75%!important;
-        margin: 0 13.5%;
         display: flex;
         position: relative;
         z-index: 2;
         background-color: whitesmoke;
+        border-bottom: lightgray solid 1px;
     }
     
     header img{
@@ -125,7 +133,6 @@ main .item h5:hover{
     nav{
         display: flex;
         width: 100%;
-        border-bottom: lightgray solid 1px;
     }
     
     .dropdown {
@@ -141,6 +148,7 @@ main .item h5:hover{
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         padding: 12px 16px;
         z-index: 1;
+        margin-top: 9px;
     }
     
     .dropdown-content a{
@@ -188,14 +196,17 @@ main .item h5:hover{
     }
 
     main h1{
+        padding-top: 45px;
         text-align: center;
         margin-bottom: 50px;
+        display: block;
+        clear: both;
     }
 
     main p{
         clear: both;
         line-height: 1.5;
-        text-align: center;
+        text-align: left;
     }
 
     main h4{
@@ -209,11 +220,11 @@ main .item h5:hover{
     }
 
     main h5{
-        text-align: right;
+        clear: both;
+        text-align: left;
         float: left;
         width: 40%;
         margin: 0;
-        padding-top: 30px;
         padding-bottom: 10px;
         font-weight: bold;
     }
@@ -222,12 +233,11 @@ main .item h5:hover{
         display: block;
         margin: 0 auto;
         width: 100%;
-        float: left;
+        clear: both;
     }
 
     article{
-        width: 90%;
-        max-height: fit-content;
+        width:75%;
         background-color: #fae6f3;
         display: block;
         margin-top: 3rem;
@@ -248,17 +258,40 @@ main .item h5:hover{
         margin-bottom: 50px;
     }
 
+    .item:nth-of-type(3n+1){
+        width: 25%;
+        display: block;
+        float: left;
+        margin-bottom: 50px;
+        margin-left: 0;
+        margin-right: 8.32%;
+    }
+
+    .item:nth-of-type(3n){
+        width: 25%;
+        display: block;
+        float: left;
+        margin-bottom: 50px;
+        margin-left: 8.32%;
+        margin-right: 0;
+    }
+
     .item img{
         width: 100%;
         display: block;
         margin: 0 auto;
     }
 
+    .item img:hover{
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.965);
+        transition: ease-out 0.2s;
+    }
+
     footer{
         clear: both;
         background-color: #fae6f3!important;
         display: block;
-        width: 100%;
+        width: 75%;
     }
 
     footer a{
@@ -273,8 +306,29 @@ main .item h5:hover{
 
     footer .item{
         display: block;
-        margin-left: 3.16%;
-        margin-right: 3.16%;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    footer .item-left img{
+        width: 50%;
+        padding-bottom: 15px;
+        padding-right: 15px;
+        float: left;
+    }
+
+    footer .item-left{
+        display: block;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    footer .item-right img{
+        width: 50%;
+    }
+
+    footer .item-right{
+        display: block;
         margin-bottom: 50px;
         margin-top: 50px;
     }
@@ -287,95 +341,20 @@ main .item h5:hover{
 
     .icofont-navigation-menu::before{
         display: none;
-    }   
-
-    .proizvod-left{
-        width: 60%;
-        display: block;
-        float: left;
-        padding: 120px 0;
-        padding-bottom: 90px;
     }
-
-    .proizvod-left img{
-        width: 80%;
-        margin: 0 10%;
-    }
-
-    .proizvod-right{
-        width: 40%;
-        float: left;
-        padding-top: 50px;
-    }
-
-    .proizvod-right h3{
-        text-align: center;
-        padding-top: 150px;
-    }
-
-    .proizvod-right h4{
-        float: right;
-        text-align: right;
-    }
-
-    .proizvod-right p{
-        padding-top: 30px;
-    }
-
-    .naruci{
-        clear: both;
-    }
-
-    .naruci h3{
-        text-align: center;
-        padding-bottom: 50px;
-    }
-
-    form{
-        width: 100%;
-    }
-
-    label{
-        width: 50%;
-        float: left;
-        text-align: right;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        font-size: 1.25rem;
-    }
-
-    input{
-        float: left;
-        border: none;
-        border: 2px solid #fae6f3;
-        border-radius: 5px;
-        font-size: 1.25rem;
-    }
-
-    input:focus{
-        outline: none;
-        border: 1px solid #BF0079;
-    }
-
-    input[type=button], input[type=submit], input[type=reset] {
-        background-color: #fae6f3;
-        border: none;
-        border: #BF0079 1px solid;
-        color: #BF0079;
-        padding: 5px 10px;
-        text-decoration: none;
-        margin: 4px 2px;
-        cursor: pointer;
-        clear: both;
-        margin: 0 50%;
-        margin-top: 10px;
-        margin-bottom: 50px;
-      }
 
 }
 
 
 @media(max-width: 575px){
+
+    #kolica-big{
+        display: none;
+    }
+
+    #kolica-small{
+        display: block;
+    }
 
     header{
         display: block;
@@ -428,6 +407,10 @@ main .item h5:hover{
         padding-top: 30px;
     }
 
+    i:hover{
+        color: #BF0079;
+    }
+
     li{
         display: block;
         align-items: center;
@@ -438,7 +421,7 @@ main .item h5:hover{
 
     li a{
         display: block;
-        width: 100%;
+        width: 90%;
         white-space: nowrap;
         padding-left: 15px;
         font-size: 1.25rem;
@@ -478,7 +461,7 @@ main .item h5:hover{
     
     main{
         margin: 0 auto;
-        width: 75%;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -488,8 +471,9 @@ main .item h5:hover{
     }
 
     main p{
+        clear: both;
         line-height: 1.5;
-        text-align: center;
+        text-align: left;
     }
 
     main h4{
@@ -503,11 +487,11 @@ main .item h5:hover{
     }
 
     main h5{
-        text-align: right;
+        clear: both;
+        text-align: left;
         float: left;
         width: 40%;
         margin: 0;
-        padding-top: 30px;
         padding-bottom: 10px;
         font-weight: bold;
     }
@@ -521,6 +505,7 @@ main .item h5:hover{
         display: block;
         position: relative;
         z-index: -1;
+        width: 100%;
     }
 
     article img{
@@ -559,10 +544,11 @@ main .item h5:hover{
 
     footer .item img{
         width: 50%;
+        padding-bottom: 15px;
     }
 
     footer .item{
-        width: 100%;
+        width: 90%;
         display: block;
         margin-left: 3.16%;
         margin-right: 3.16%;
@@ -576,96 +562,21 @@ main .item h5:hover{
         padding-top: 20px;
     }
 
-    .proizvod-left{
-        width: 100%;
-        display: block;
-        margin: 0 auto;
-        padding: 120px 0;
-        padding-bottom: 90px;
-        padding-top: 200px;
-    }
-
-    .proizvod-left img{
-        width: 100%;
-    }
-
-    .proizvod-right{
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .proizvod-right h3{
-        text-align: center;
-    }
-
-    .proizvod-right h4{
-        float: right;
-        text-align: right;
-    }
-
-    .proizvod-right p{
-        padding-top: 75px;
-    }
-
-    .naruci{
-        clear: both;
-    }
-
-    .naruci h3{
-        padding-top: 50px;
-        text-align: center;
-        padding-bottom: 50px;
-    }
-
-    form{
-        width: 100%;
-    }
-
-    label{
-        width: 90%;
-        float: left;
-        text-align: left;
-        padding-right: 15px;
-        padding-bottom: 10px;
-        font-size: 1.25rem;
-    }
-
-    input{
-        float: left;
-        border: none;
-        border: 2px solid #fae6f3;
-        border-radius: 5px;
-        font-size: 1.25rem;
-        width: 75%;
-        margin-bottom: 15px;
-    }
-
-    input:focus{
-        outline: none;
-        border: 1px solid #BF0079;
-    }
-
-    input[type=button], input[type=submit], input[type=reset] {
-        background-color: #fae6f3;
-        border: none;
-        border: #BF0079 1px solid;
-        color: #BF0079;
-        padding: 5px 10px;
-        text-decoration: none;
-        margin: 4px 2px;
-        cursor: pointer;
-        clear: both;
-        margin: 0 50%;
-        margin-top: 10px;
-        margin-bottom: 50px;
-        width: fit-content;
-      }
-
 }
 
 @media(min-width: 575px) and (max-width: 1115px){
-    nav{
+
+    #kolica-big{
         display: block;
+    }
+
+    #kolica-small{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        width: 100%;
     }
 
     nav ul{
@@ -709,21 +620,16 @@ main .item h5:hover{
     }
 
     .wrapper{
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
         display: flex;
+        border-bottom: lightgray solid 1px;
     }
     
     header img{
         height: 50px;
         margin: 0 auto;
         display: block;  
-    }
-    
-    nav{
-        display: flex;
-        width: 100%;
-        border-bottom: lightgray solid 1px;
     }
     
     .dropdown {
@@ -739,6 +645,7 @@ main .item h5:hover{
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         padding: 10px 12px;
         z-index: 1;
+        margin-top: 10px;
     }
     
     .dropdown-content a{
@@ -774,18 +681,20 @@ main .item h5:hover{
 
     main{
         margin: 0 auto;
-        width: 75%;
+        width: 90%;
         margin: 0 auto;
     }
 
     main h1{
         text-align: center;
         margin-bottom: 50px;
+        margin-top: 45px;
     }
 
     main p{
+        clear: both;
         line-height: 1.5;
-        text-align: center;
+        text-align: left;
     }
 
     main h4{
@@ -799,22 +708,22 @@ main .item h5:hover{
     }
 
     main h5{
-        text-align: right;
+        clear: both;
+        text-align: left;
         float: left;
         width: 40%;
         margin: 0;
-        padding-top: 30px;
         padding-bottom: 10px;
         font-weight: bold;
     }
 
 
     .item{
-        width: 40%;
+        width: 30%;
         display: block;
         float: left;
-        margin-left: 4.16%;
-        margin-right: 4.16%;
+        margin-left: 5%;
+        margin-right: 5%;
         margin-bottom: 50px;
     }
 
@@ -824,11 +733,35 @@ main .item h5:hover{
         margin: 0 auto;
     }
 
+    .item img:hover{
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.965);
+        transition: ease-out 0.2s;
+    }
+
+    .item:nth-of-type(3n+1){
+        width: 30%;
+        display: block;
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .item:nth-of-type(3n){
+        width: 30%;
+        display: block;
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+
     footer{
         clear: both;
         background-color: #fae6f3!important;
         display: block;
-        width: 100%;
+        width: 90%;
         }
 
     footer a{
@@ -837,9 +770,12 @@ main .item h5:hover{
     }
 
     footer .item img{
+        float: left;
         width: 50%;
         display: block;
         margin: 0 auto;
+        padding-right: 15px;
+        padding-bottom: 15px;
     }
 
     footer .item{
@@ -860,8 +796,9 @@ main .item h5:hover{
 
     article{
         width: 90%;
-        background-color: #fae6f3;
+        background-color: whitesmoke;
     }
+
     article img {
         width: 100%!important;
     }
@@ -869,87 +806,5 @@ main .item h5:hover{
     .icofont-navigation-menu::before{
         display: none;
     }
-
-    .proizvod-left{
-        width: 75%;
-        display: block;
-        margin: 0 auto;
-        padding: 120px 0;
-        padding-bottom: 90px;
-    }
-
-    .proizvod-left img{
-        width: 100%;
-    }
-
-    .proizvod-right{
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .proizvod-right h3{
-        text-align: center;
-    }
-
-    .proizvod-right h4{
-        float: right;
-        text-align: right;
-    }
-
-    .proizvod-right p{
-        padding-top: 75px;
-    }
-
-    .naruci{
-        clear: both;
-    }
-
-    .naruci h3{
-        padding-top: 50px;
-        text-align: center;
-        padding-bottom: 50px;
-    }
-
-    form{
-        width: 100%;
-    }
-
-    label{
-        width: 50%;
-        float: left;
-        text-align: right;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        font-size: 1.25rem;
-    }
-
-    input{
-        float: left;
-        border: none;
-        border: 2px solid #fae6f3;
-        border-radius: 5px;
-        font-size: 1.25rem;
-    }
-
-    input:focus{
-        outline: none;
-        border: 1px solid #BF0079;
-    }
-
-    input[type=button], input[type=submit], input[type=reset] {
-        background-color: #fae6f3;
-        border: none;
-        border: #BF0079 1px solid;
-        color: #BF0079;
-        padding: 5px 10px;
-        text-decoration: none;
-        margin: 4px 2px;
-        cursor: pointer;
-        clear: both;
-        margin: 0 50%;
-        margin-top: 10px;
-        margin-bottom: 50px;
-      }
-
 }
 
