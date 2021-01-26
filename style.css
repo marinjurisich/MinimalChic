@@ -302,32 +302,10 @@ main h5:hover{
 
     footer .item img{
         width: 50%;
+        padding-bottom: 15px;
     }
 
     footer .item{
-        display: block;
-        margin-bottom: 50px;
-        margin-top: 50px;
-    }
-
-    footer .item-left img{
-        width: 50%;
-        padding-bottom: 15px;
-        padding-right: 15px;
-        float: left;
-    }
-
-    footer .item-left{
-        display: block;
-        margin-bottom: 50px;
-        margin-top: 50px;
-    }
-
-    footer .item-right img{
-        width: 50%;
-    }
-
-    footer .item-right{
         display: block;
         margin-bottom: 50px;
         margin-top: 50px;
