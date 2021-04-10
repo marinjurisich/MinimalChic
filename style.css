@@ -112,7 +112,7 @@ main h5:hover{
     
     a:link{
         text-decoration: none;
-        
+        color: black;
     }
 
     .wrapper{
@@ -165,7 +165,7 @@ main h5:hover{
     a img {
         text-decoration: none;
         border: 0 none;
-        }
+    }
     
     header a i{
         height: 40px!important;
@@ -295,18 +295,33 @@ main h5:hover{
     }
 
     footer a{
-        
         font-size: 1.25rem;
         display: block;
     }
 
+    footer a:link{
+        color: #BF0079;
+    }
+
+    footer a:link:hover{
+        color: black;
+    }
+
     footer .item img{
+        float: left;
         width: 50%;
+        display: block;
+        margin: 0 auto;
+        padding-right: 15px;
         padding-bottom: 15px;
     }
 
     footer .item{
+        float: left;
+        width: 25%;
         display: block;
+        margin-left: 3.16%;
+        margin-right: 3.16%;
         margin-bottom: 50px;
         margin-top: 50px;
     }
@@ -594,7 +609,7 @@ main h5:hover{
 
     a:link{
         text-decoration: none;
-        
+        color: black;
     }
 
     .wrapper{
@@ -634,8 +649,7 @@ main h5:hover{
     .dropdown:hover .dropdown-content {
         display: block;
     }
-    
-    
+
     a img {
         text-decoration: none;
         border: 0 none;
@@ -711,7 +725,7 @@ main h5:hover{
         margin: 0 auto;
     }
 
-    main .item img:hover{
+    .item img:hover{
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.965);
         transition: ease-out 0.2s;
     }
@@ -745,6 +759,14 @@ main h5:hover{
     footer a{
         font-size: 1.25rem;
         display: block;
+    }
+
+    footer a:link{
+        color: #BF0079;
+    }
+
+    footer a:link:hover{
+        color: black;
     }
 
     footer .item img{
@@ -785,4 +807,3 @@ main h5:hover{
         display: none;
     }
 }
-
